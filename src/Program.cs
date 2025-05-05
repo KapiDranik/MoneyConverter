@@ -18,6 +18,8 @@
             var roundInput = Console.ReadLine();
             if (roundInput == "y")
                 roundNumber = true;
+            else if(roundInput == "n")
+                roundNumber = false;
             else
                 roundNumber = false;
 
