@@ -8,14 +8,13 @@ namespace MoneyConverter
     {
         WebClient client = new WebClient();
         string url = "https://www.cbr.ru/scripts/XML_daily.asp";
+        NumberFormatInfo formatInfo = new NumberFormatInfo
+        {
+            NumberDecimalSeparator = ",",
+        };
 
         public double GetRubleCourse()
         {
-            NumberFormatInfo formatInfo = new NumberFormatInfo
-            {
-                NumberDecimalSeparator = ",",
-            };
-
             string xml = client.DownloadString(url);
 
             XmlDocument xmlDoc = new XmlDocument();

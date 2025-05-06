@@ -2,8 +2,8 @@
 {
     public class MoneyConvert
     {
-        Calculator calc = new Calculator();
         double result;
+        Calculator calc = new Calculator();
 
         public double ConvertDollarToRuble(double numberInDollars, double currentCourse, bool roundResult)
         {
