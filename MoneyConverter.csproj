@@ -7,6 +7,18 @@
     <Nullable>enable</Nullable>
     <PublishAot>true</PublishAot>
     <InvariantGlobalization>true</InvariantGlobalization>
+    <ApplicationIcon>res\currency.ico</ApplicationIcon>
   </PropertyGroup>
 
+	<ItemGroup>
+		<Content Include="res\" />
+	</ItemGroup>
+	
+  <ItemGroup>
+    <Content Include="res\currency.ico" />
+  </ItemGroup>
+	
+  <ItemGroup>
+    <Folder Include="bin\Release\net8.0\" />
+  </ItemGroup>
 </Project>
